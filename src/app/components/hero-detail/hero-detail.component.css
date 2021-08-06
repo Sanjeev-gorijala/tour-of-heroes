@@ -15,6 +15,7 @@ label {
   }
   button {
     margin-top: 20px;
+    margin-right:5px;
     background-color: #eee;
     padding: .5remrem;
     border-radius: 4px;
@@ -22,7 +23,7 @@ label {
   }
   button:hover {
     background-color: #cfd8dc;
-    padding:0.5rem
+    
   }
   button:disabled {
     background-color: #eee;

@@ -12,7 +12,7 @@ import { MessageService } from 'src/app/services/message.service';
 })
 export class HeroesComponent implements OnInit {
 
-  heroes?: Hero[];
+  heroes: Hero[]=[];
   
   constructor(private heroservice: HeroService, private messageService: MessageService) { }
 
@@ -22,6 +22,15 @@ export class HeroesComponent implements OnInit {
 
   getHeroes(): void {
     this.heroservice.getHeroes().subscribe(heroes => (this.heroes = heroes));
+  }
+
+  add(name: string): void {
+    name = name.trim();
+    if (!name) { return; }
+    this.heroservice.addHero({ name } as Hero)
+      .subscribe(hero => {
+        this.heroes.push(hero);
+      });
   }
 
 }

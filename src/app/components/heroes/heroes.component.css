@@ -52,3 +52,13 @@
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
 }
+
+button{
+  padding:0.5rem;
+  margin:0.5rem;
+}
+
+input{
+  padding:0.5rem;
+  margin:0.5rem;
+}
