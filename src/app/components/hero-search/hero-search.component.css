@@ -1,0 +1,11 @@
+div {
+    float:right;
+}
+
+input{
+    padding:0.25rem;
+}
+
+label{
+    font-weight: bold;
+}
